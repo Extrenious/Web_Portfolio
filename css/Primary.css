@@ -1,0 +1,27 @@
+
+body {
+    background-color: rgb(243, 188, 248);
+}
+  
+h1{
+    color: rgb(106, 0, 255);
+    text-align: center;
+    text-shadow: 1px 2px rgba(106, 0, 255, 0.348);
+
+    font-family: "Century Gothic";
+
+}
+
+.T1{
+    color: rgb(106, 0, 255);
+    text-align: center;
+    font-family: "Century Gothic"; 
+}
+
+.T2{
+    color: rgb(106, 0, 255);
+    text-align: center;
+    font-family: "Century Gothic"; 
+    opacity: 0.5;
+    transform: rotate(-10deg);
+}
