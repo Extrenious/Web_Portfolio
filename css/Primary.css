@@ -1,27 +1,67 @@
 
 body {
-    background-color: rgb(243, 188, 248);
+    background-color: rgb(255, 255, 255);
 }
   
 h1{
-    color: rgb(106, 0, 255);
+    color: rgb(255, 0, 0);
     text-align: center;
-    text-shadow: 1px 2px rgba(106, 0, 255, 0.348);
+    text-shadow: 1px 1px rgba(37, 37, 37, 0.348);
 
-    font-family: "Century Gothic";
+
+}
+.MainHeader {
+    height: 1vh; /* Full viewport height */
+    display: flex;
+    justify-content: top; /* Aligns items horizontally to the top */
+    align-items: top; /* Aligns items vertically to the top */
+    flex-direction: column;
+    justify-content: center;
+    font-size: 6.5rem;
 
 }
 
 .T1{
-    color: rgb(106, 0, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
-    font-family: "Century Gothic"; 
 }
 
 .T2{
-    color: rgb(106, 0, 255);
+    color: rgb(255, 0, 0);
     text-align: center;
-    font-family: "Century Gothic"; 
     opacity: 0.5;
     transform: rotate(-10deg);
 }
+
+.epilogue_light {
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;/* 100-900 */
+    font-style: normal;
+  }
+  .epilogue_default {
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;/* 100-900 */
+    font-style: normal;
+  }
+ .epilogue_heavy {
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;/* 100-900 */
+    font-style: normal;
+  }
+  
+  .News_Cycle_Light {
+    font-family: "News Cycle", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;/* 100-900 */
+    font-style: normal;
+  }
+
+  .News_Cycle_Bold {
+    font-family: "News Cycle", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;/* 100-900 */
+    font-style: normal;
+  }
