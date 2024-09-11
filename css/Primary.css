@@ -10,6 +10,11 @@ h1{
 
 
 }
+
+.LargeSpace {
+    height: 100vh; /* Full viewport height */
+
+}
 .MainHeader {
     height: 1vh; /* Full viewport height */
     display: flex;
@@ -55,7 +60,7 @@ h1{
   .News_Cycle_Light {
     font-family: "News Cycle", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 100;/* 100-900 */
+    font-weight: 50;/* 100-900 */
     font-style: normal;
   }
 
@@ -65,3 +70,49 @@ h1{
     font-weight: 900;/* 100-900 */
     font-style: normal;
   }
+
+.scroll-watcher {
+    height: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: red;
+    width: 100%;
+    scale: 0 1;
+    animation: scroll-watcher linear;
+    animation-timeline:  scroll();
+
+}
+
+@keyframes scroll-watcher {
+    to {scale: 1 1;}
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+    article > img {
+        opacity: .9;
+        animation: fade-in 1s linear; /* Define animation duration */
+        /* Uncomment and adjust the following if supported by your environment */
+         animation-timeline: view(); 
+        animation-range: entry 100px; 
+    }
+
+    @keyframes fade-in {
+        from { transform: scale(0.8); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+    }
+}
+
+
+/*
+article > img {
+    opacity: 0; /* Make the image invisible by default 
+    transform: scale(0.8); /* Optional: Start with a smaller scale 
+    transition: opacity 1s linear, transform 1s linear; /* Smooth transition 
+}
+
+article > img.visible {
+    opacity: 1; /* Fade in 
+    transform: scale(1); /* Scale up to normal size 
+}*/
