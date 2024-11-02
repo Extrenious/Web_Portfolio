@@ -10,6 +10,13 @@ h1{
 
 
 }
+.BlackBG {
+    background-color: black;
+}
+.SmallSpace {
+    height: 15vh; /* Full viewport height */
+
+}
 
 .LargeSpace {
     height: 100vh; /* Full viewport height */
@@ -22,10 +29,10 @@ h1{
     align-items: top; /* Aligns items vertically to the top */
     flex-direction: column;
     justify-content: center;
-    font-size: 6.5rem;
-
 }
-
+.T0 {
+    color:white;
+}
 .T1{
     color: rgb(0, 0, 0);
     text-align: center;
@@ -37,7 +44,10 @@ h1{
     opacity: 0.5;
     transform: rotate(-10deg);
 }
+.FontS_Large {
+    font-size: 6.5rem;
 
+}
 .epilogue_light {
     font-family: "Epilogue", sans-serif;
     font-optical-sizing: auto;
@@ -116,3 +126,74 @@ article > img.visible {
     opacity: 1; /* Fade in 
     transform: scale(1); /* Scale up to normal size 
 }*/
+
+
+
+
+/* Footer with Pastel Rainbow Background 
+footer {
+    background: linear-gradient(90deg, #ffb6c1, #ffecb3, #c1ffc1, #b3e5fc, #d1c4e9);
+    color: black;
+}
+*/
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #333; /* Darker shade on hover */
+}
+
+.footer .text-uppercase {
+    font-weight: bold;
+    color: black;
+}
+.TextRGBTrans {
+    animation: rainbowTransitionTxT 120s linear infinite;
+}
+/* Footer with Pastel Rainbow Animation */
+footer {
+    color: black;
+    animation: rainbowTransitionBG 120s linear infinite;
+}
+
+@keyframes pastelRainbow {
+    0% { background-color: #ffb6c1; }  /* Light Pink */
+    25% { background-color: #ffecb3; } /* Light Yellow */
+    50% { background-color: #c1ffc1; } /* Light Green */
+    75% { background-color: #b3e5fc; } /* Light Blue */
+    100% { background-color: #d1c4e9; } /* Light Purple */
+}
+
+
+@keyframes rainbowTransitionBG {
+    0% { background-color: red; }
+    16% { background-color: orange; }
+    33% { background-color: yellow; }
+    50% { background-color: green; }
+    66% { background-color: blue; }
+    83% { background-color: indigo; }
+    100% { background-color: violet; }
+}
+
+@keyframes rainbowTransitionTxT {
+    0% {  color: red; }
+    16% { color: orange; }
+    33% { color: yellow; }
+    50% { color: green; }
+    66% { color: blue; }
+    83% { color: indigo; }
+    100% { color: violet; }
+}
+
+
+/* Footer Links */
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #333; /* Slightly darker on hover */
+}
