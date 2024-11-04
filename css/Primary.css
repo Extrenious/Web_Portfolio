@@ -192,8 +192,15 @@ footer {
 footer a {
     color: black;
     text-decoration: none;
+    transition: background 0.3s;
+
 }
 
-footer a:hover {
+footer a:hover {{
     color: #333; /* Slightly darker on hover */
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+
+}
+.progress-bar-spacing {
+    margin-bottom: 15px; /* Adjust the value to your preference */
 }
